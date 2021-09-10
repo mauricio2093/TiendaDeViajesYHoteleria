@@ -1,6 +1,13 @@
 # Sitio web de viajes y hoteleria   🌊
 ## ![#9FD5D1] (Sitio web de viajes y hotelería) `#9FD5D1`🌊
-### ! text in orange
+### 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 -Sitio web de viajes a las playas más hermosas, utilizando HTML, CSS y JAVASCRIPT.
 -Contiene .
