@@ -2,7 +2,7 @@
 ## ![#9FD5D1] (Sitio web de viajes y hotelería) `#9FD5D1`🌊
 ### 
 ```diff
-- text in red
+- 
 + text in green
 ! text in orange
 # text in gray
