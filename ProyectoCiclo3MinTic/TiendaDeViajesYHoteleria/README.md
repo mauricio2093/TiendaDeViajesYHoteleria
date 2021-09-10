@@ -1,6 +1,6 @@
 # Sitio web de viajes y hoteleria   🌊✈🛳
 
-##Sitio web de viajes y hotelería  ☀️⛱🌴
+## Sitio web de viajes y hotelería  ☀️⛱🌴
 
 
 - Sitio web de viajes a las playas más hermosas, utilizando HTML, CSS y JAVASCRIPT.
