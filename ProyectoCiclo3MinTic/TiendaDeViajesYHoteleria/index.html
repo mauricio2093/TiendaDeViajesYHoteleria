@@ -20,9 +20,24 @@
     <body>
         <!------- Header - Parte de Julio ------->
         <header>
+            <nav class="nav container">
 
-
+            
+                <div>
         <!------- Cambio de Tema - Mauricio ------->  
+                    <div class="nav__dark">
+                        <!-- Boton para cambio de tema -->
+                        <span class="change-theme-name">Modo Oscuro</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
         </header>
         <!------- Main - Parte de ALexandra y Juan Esteban ------->
         <main>
@@ -37,16 +52,167 @@
             <!--=============== Experiencia ========-->
 
             <!--=============== Video =============-->
+        <!----------Parte Mauricio--------------->
+        <!--==================== PLACES ====================-->
+        <section class="place section" id="place">
+            <h2 class="section__title">Escoge tu lugar</h2>
 
-        <!------------- PArte -- Mauricio-->
+            <div class="place__container container grid">
+                <!--==================== PLACES CARD 1 ====================-->
+                <div class="place__card">
+                    <img src="assets/img/place1.jpg" alt="" class="place__img">
+                    
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
 
-            <!--============== Lugares=============-->
+                        <div class="place__data">
+                            <h3 class="place__title">Cartagena</h3>
+                            <span class="place__subtitle">Colombia</span>
+                            <span class="place__price">$800.000 COP</span>
+                        </div>
+                    </div>
 
-            <!--=============  Suscribirse ========-->
+                    <button class="button button--flex place__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
 
-            <!--=============  Patrocinadores =====-->
+                <!--==================== PLACES CARD 2 ====================-->
+                <div class="place__card">
+                    <img src="assets/img/place2.jpg" alt="" class="place__img">
+                    
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">5,0</span>
+                        </span>
 
-        </main>
+                        <div class="place__data">
+                            <h3 class="place__title">Santa Marta</h3>
+                            <span class="place__subtitle">Colombia</span>
+                            <span class="place__price">$760.000 COP</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 3 ====================-->
+                <div class="place__card">
+                    <img src="assets/img/place3.jpg" alt="" class="place__img">
+                    
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,9</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">San Andres</h3>
+                            <span class="place__subtitle">Colombia</span>
+                            <span class="place__price">$1'200.000 COP</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 4 ====================-->
+                <div class="place__card">
+                    <img src="assets/img/place4.jpg" alt="" class="place__img">
+                    
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">La Roca del Peñon</h3>
+                            <span class="place__subtitle">Colombia</span>
+                            <span class="place__price">$600.000 COP</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+
+                <!--==================== PLACES CARD 5 ====================-->
+                <div class="place__card">
+                    <img src="assets/img/place5.jpg" alt="" class="place__img">
+                    
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+
+                        <div class="place__data">
+                            <h3 class="place__title">Eje Cafetero</h3>
+                            <span class="place__subtitle">Colombia</span>
+                            <span class="place__price">$400.000</span>
+                        </div>
+                    </div>
+
+                    <button class="button button--flex place__button">
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SUBSCRIBE ====================-->
+        <section class="subscribe section">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Suscribete a nuestro <br> boletín informativo </h2>
+                    <p class="subscribe__description">Suscribete a nuestro boletin para estar informado y obten 
+                                                        descuentos especiales
+                    </p>
+
+                    <form action="" class="subscribe__form">
+                        <input type="text" placeholder="Enter email" class="subscribe__input">
+
+                        <button class="button">
+                            Suscribirse
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!--==================== SPONSORS ====================-->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content">
+                    <img src="assets/img/patrocinador1.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/patrocinador2.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/patrocinador3.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                </div>
+                <div class="sponsor__content">
+                    <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+        
         <!------------- Footer - Yira --------------->
         <!--============== FOOTER =================-->
         <footer>
