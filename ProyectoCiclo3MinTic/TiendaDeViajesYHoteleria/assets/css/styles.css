@@ -1,24 +1,59 @@
 /*=============== Fuentes de GOOGLE ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
 
-/*============== Variables =======================*/
+/*============== Variables Fuentes colores dimensiones  =======================*/
 
 :root{
-    /*============= Altura de header ===========*/
     
+
+    
+    /*============= Altura de header ===========*/
+    --header-height: 3rem
     /*============= Colores ================*/
-
+    /* cambiar el color que quiera */
+    /*verde oscuro 190 - verde 171 - verde azul 200*/
+    --hue-color: 171;
     /* HSL modo de color */
-
+    --first-color: hsl(var(--hue-color), 64%, 22%);
+    --first-color-second: hsl(var(--hue-color), 64%, 22%);
+    --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+    --title-color: hsl(var(--hue-color), 64%, 18%);
+    --text-color: hsl(var(--hue-color), 24%, 35%);
+    --text-color-light: hsl(var(--hue-color), 8%, 60%);
+    --input-color: hsl(var(--hue-color), 24%, 97%);
+    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --white-color: #FFF;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
     /*=========== Fuente y tipografia =========*/
-
+    --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
     /*============ Tamaño de fuente ========= */
-
+    --font-medium: 500;
+    --font-semi-bold: 600;
     /* =========== Margenes  superiores ======= */
-
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
     /* ===========  Eje Z =============== */
-
+    --z-tooltip: 10;
+    --z-fixed: 100;
     /* ============= Superposición de desplazamiento ========== */
+    --img-transition: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
 }
 
 /* ============ Variables Medidas Responive ========*/
@@ -26,6 +61,13 @@
 @media screeb and (min-width: 968px) {
     :root{
         /*=============== Fuente y Tamaño ==========*/
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
     }
 }
 
