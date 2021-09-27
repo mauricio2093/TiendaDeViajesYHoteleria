@@ -101,9 +101,85 @@ body.dark-theme {
     font-size: var(--small-font-size);
 }
 /*================ Base ============================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--title-font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input {
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.main {
+    overflow-x: hidden;
+}
 /*================== Clases Css ==================*/
+.section {
+    padding: 4.5rem 0 2.5rem;
+}
 
+.section__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: var(--mb-2);
+}
+
+.container {
+    max-width: 968px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
 /*================== HEADER ======================*/
 
 /*================= NAVEGACION ================*/
@@ -117,7 +193,33 @@ body.dark-theme {
 /*================= INICIO =============*/
 
 /* ================ Botones ===========*/
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    transition: .3s;
+}
 
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+.button--flex {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.button--link {
+    background: none;
+    padding: 0;
+}
+
+.button--link:hover {
+    background: none;
+}
 /*===================INFORMACION =======*/
 
 /*=============== DISCOVER ===============*/
@@ -126,15 +228,90 @@ body.dark-theme {
 
 /*=============== VIDEO ===============*/
 
-/*=============== PLACES ===============*/
-
+/*=============== Lugares y Hoteles ===============*/
+.place__card, .place__img {
+    height: 230px;
+    filter: invert(0.1);
+}
+  
+.place__container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+}
+  
+.place__card {
+    position: relative;
+    overflow: var(--img-hidden);
+    background-color: rgba(37, 109, 123,1);
+}
+  
+.place__card:hover .place__img {
+    transform: var(--img-scale);
+}
+  
+.place__img {
+    transition: var(--img-transition);
+    background-color: rgba(37, 109, 123,1);
+}
+  
+.place__content, .place__title {
+    color: var(--white-color);
+}
+  
+.place__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .75rem .75rem 1rem;
+}
+  
+.place__rating {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+  
+.place__rating-icon {
+    font-size: .75rem;
+    margin-right: var(--mb-0-25);
+}
+  
+.place__rating-number {
+    font-size: var(--small-font-size);
+}
+  
+.place__subtitle, .place__price {
+    display: block;
+}
+  
+.place__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+  
+.place__subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb-1-25);
+}
+  
+.place__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: .75rem 1rem;
+}
 /*=============== SUBSCRIBE ===============*/
 
-/*=============== SPONSORS ===============*/
+/*=============== Promotores ===============*/
 
 /*=============== FOOTER ===============*/
 
-/*========== SCROLL UP ==========*/
+/*========== SCROLL hacia arriba ==========*/
 
 /*=============== SCROLL BAR ===============*/
 
