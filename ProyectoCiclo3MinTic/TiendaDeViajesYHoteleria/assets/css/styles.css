@@ -233,31 +233,31 @@ input {
     height: 230px;
     filter: invert(0.1);
 }
-  
+
 .place__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
 }
-  
+
 .place__card {
     position: relative;
     overflow: var(--img-hidden);
     background-color: rgba(37, 109, 123,1);
 }
-  
+
 .place__card:hover .place__img {
     transform: var(--img-scale);
 }
-  
+
 .place__img {
     transition: var(--img-transition);
     background-color: rgba(37, 109, 123,1);
 }
-  
+
 .place__content, .place__title {
     color: var(--white-color);
 }
-  
+
 .place__content {
     position: absolute;
     top: 0;
@@ -269,51 +269,139 @@ input {
     justify-content: space-between;
     padding: .75rem .75rem 1rem;
 }
-  
+
 .place__rating {
     align-self: flex-end;
     display: flex;
     align-items: center;
 }
-  
+
 .place__rating-icon {
     font-size: .75rem;
     margin-right: var(--mb-0-25);
 }
-  
+
 .place__rating-number {
     font-size: var(--small-font-size);
 }
-  
+
 .place__subtitle, .place__price {
     display: block;
 }
-  
+
 .place__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-25);
 }
-  
+
 .place__subtitle {
     font-size: var(--smaller-font-size);
     margin-bottom: var(--mb-1-25);
 }
-  
+
 .place__button {
     position: absolute;
     right: 0;
     bottom: 0;
     padding: .75rem 1rem;
 }
-/*=============== SUBSCRIBE ===============*/
+/*=============== SUSCRIBE ===============*/
+.subscribe__bg {
+    background-color: var(--first-color-second);
+    padding: 2.5rem 0;
+}
 
-/*=============== Promotores ===============*/
+.subscribe__title, 
+.subscribe__description {
+    color: var(--white-color);
+}
+
+.subscribe__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.subscribe__form {
+    background-color: var(--input-color);
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe__input {
+    width: 70%;
+    padding-right: .5rem;
+    background-color: var(--input-color);
+    color: var(--text-color);
+}
+
+.subscribe__input::placeholder {
+    color: var(--text-color);
+}
+
+/*=============== PATROCINADORES ===============*/
+.sponsor__container {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    justify-items: center;
+    row-gap: 3.5rem;
+}
+
+.sponsor__content:hover .spon-efect{
+    filter: invert(0.5);
+}
+
+.sponsor__img{
+    width: 90px;
+}
+    
+.spon-efect {
+    filter: invert(0.7);
+    transition: var(--img-transition);
+}
 
 /*=============== FOOTER ===============*/
 
 /*========== SCROLL hacia arriba ==========*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    padding: .5rem;
+    display: flex;
+    opacity: .9;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+}
 
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+    opacity: 1;
+}
+
+.scrollup__icon {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+.scrollup__icon-wpp{
+    color: #FFF;
+}
+  /* mostrar scroll */
+.show-scroll {
+    bottom: 5rem;
+}
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .60rem;
+    background-color: var(--scroll-bar-color);
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+}
 /*=============== MEDIA QUERIES ===============*/
     /* For large devices */
